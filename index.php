@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-       <title>Ceci est une page de test <?php /* Code PHP */ ?></title>
+       <title>Ceci est une page de test </title>
         <meta charset="utf-8" />
     </head>
-    <body>
-        <h1>Ma page web</h1>
+     <body>
+ 
+    <?php include('header.php'); ?>
+    
+    <!-- Le corps -->
+    
+    <div id="body">
+        <h1 style="text-align:center">Mon super site</h1>
+        
+        <p>
+            Bienvenue sur mon super site !<br />
+            Vous allez adorer ici, c'est un site génial qui va parler de... euh... Je cherche encore un peu le thème de mon site. :-D
+        </p>
+    </div>
+    
         <p>Aujourd'hui nous sommes le <?php echo date('d/m/Y h:i:s'); ?>.</p>
-        <?php
-
-echo "J'ai 92 ans.";
-?>
         <ul>
         <li style="color: #2596be;">Texte en bleu</li>
         <li style="color: red;">Texte en rouge</li>
@@ -58,7 +67,10 @@ $minut = date('i');
 // Maintenant on peut afficher ce qu'on a recueilli
 echo 'Bonjour ! Nous sommes le ' . $day . '/' . $month . '/' . $year . ' et il est ' . $hour. ' h ' . $minut;
 ?>
+
+  <!-- Le pied de page -->
+    
+    <?php include('footer.php'); ?>
+    
     </body>
-    
-    
 </html>
