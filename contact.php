@@ -23,13 +23,14 @@
             </div>
             <div class="mb-3">
                 <label for="message" class="form-label">Votre message</label>
-                <textarea class="form-control" placeholder="Exprimez vous" id="message" name="textarea"></textarea>
+                <textarea class="form-control" placeholder="Exprimez vous" id="message" name="message"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Envoyer</button>
 
         </form>
         <br />
     </div>
+
 
     <?php include_once('footer.php'); ?>
 </body>
